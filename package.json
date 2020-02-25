@@ -7,13 +7,15 @@
     "tsc": "node ./node_modules/typescript/lib/tsc.js",
     "start": "npm run tsc && tsc -w ",
     "gulp": "gulp watch && gulp sass",
-    "build": "gulp clear && gulp uglify && gulp build"
+    "build": "gulp clear && gulp uglify && gulp build",
+    "git": "git add . && git commit -m"
   },
   "keywords": [],
   "author": "",
   "license": "",
   "dependencies": {
     "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "miniprogram-api-typings": "^2.10.1-1",
     "nodemon": "^2.0.2",
     "typescript": "^3.3.3333"

@@ -1,2 +1,5 @@
 <!--components/index/item/item.wxml-->
-<text>components/index/item/item.wxml</text>
+<view>
+    <text>components/index/item/item.wxml</text>
+</view>
+

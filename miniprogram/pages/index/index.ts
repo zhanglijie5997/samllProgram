@@ -22,7 +22,7 @@ Page({
     })
   },
   onLoad() {
-    console.log(wxGetsysteminfo, setting, 'a')
+    console.log(wxGetsysteminfo, setting, 'setting')
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

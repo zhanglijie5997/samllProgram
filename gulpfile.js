@@ -3,7 +3,7 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 const rname = require("gulp-rename");
 const uglify = require("gulp-uglify");
-// const image = require("gulp-imagemin");
+const image = require("gulp-imagemin");
 const clear = require("gulp-clean");
 const pipeline = require("readable-stream").pipeline;
 
@@ -35,9 +35,26 @@ gulp.task('uglify', () => {
     );
 });
 
+// 图片压缩
+gulp.task("image", () => {
+    return gulp.src("./miniprogram/images/**/*.{png,jpg,jpeg,gif,ico}",) 
+               .pipe(image([
+                image.gifsicle({interlaced: true}),
+                image.mozjpeg({quality: 75, progressive: true}),
+                image.optipng({optimizationLevel: 5}),
+                image.svgo({
+                    plugins: [
+                        {removeViewBox: true},
+                        {cleanupIDs: false}
+                    ]
+                })
+               ]))
+               .pipe(gulp.dest("./miniprogram/images/"))
+})
+
 // 清理模板
 gulp.task("clear", () => {
-    return gulp.src("./dist")
+    return gulp.src("./dist/")
                 .pipe(clear())
 })
 
@@ -46,7 +63,7 @@ gulp.task("clear", () => {
 gulp.task("build", () => {
     return gulp.src(["./miniprogram/**/*.js", "./miniprogram/**/*.wxml", 
                      "./miniprogram/**/*.wxss", "./miniprogram/**/*.json", 
-                    "./miniprogram/images/**",
+                     "./miniprogram/**/*.{png,jpg,jpeg,gif,ico}",
                      ])
             .pipe(gulp.dest("dist"))
 })
