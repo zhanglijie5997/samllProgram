@@ -13,6 +13,7 @@
 		"coverView": true,
 		"nodeModules": true,
 		"autoAudits": true,
+		"uglifyFileName": true,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -20,8 +21,7 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		},
-		"uglifyFileName": true
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.2",
@@ -31,7 +31,11 @@
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"scripts": {},
+	"scripts": {
+		"beforeCompile": "npm run tsc",
+		"beforePreview": "npm run tsc",
+		"beforeUpload": "npm run tsc"
+	},
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {

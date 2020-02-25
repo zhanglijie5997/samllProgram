@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\ilaisa\Desktop\wechat_store\node_modules\.node-sass.DELETE\vendor\win32-x64-64\binding.node'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\ilaisa\Desktop\wechat_store\node_modules\bin-check\node_modules'
 
 npm manifest: 
   {
@@ -25,7 +25,7 @@ npm manifest:
       "compile": "./node_modules/typescript/bin/tsc",
       "tsc": "node ./node_modules/typescript/lib/tsc.js",
       "gulp": "gulp watch && gulp sass",
-      "build": "gulp uglify && gulp build"
+      "build": "gulp clear && gulp uglify && gulp build"
     },
     "keywords": [],
     "author": "",
@@ -36,6 +36,7 @@ npm manifest:
       "typescript": "^3.3.3333"
     },
     "devDependencies": {
+      "gulp-clean": "^0.4.0",
       "gulp-rename": "^2.0.0",
       "gulp-sass": "^4.0.2",
       "gulp-uglify": "^3.0.2",

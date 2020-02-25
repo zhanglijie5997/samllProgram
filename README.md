@@ -3,5 +3,10 @@
 
 2.执行npm run gulp
 
+## 启动项目
+npm run start  --- 监听ts文件变化
+ 
+npm run gulp   --- 监听scss变化
+
 ## 打包
-执行 npm run build
+npm run build

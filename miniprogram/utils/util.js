@@ -1,1 +1,10 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var env="devolpoment",envMap=new Map([["devolpoment","https://ceshi.com"],["pre","https://pre.com"],["production","https://production.com"]]);exports.setting=envMap.get(env);
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var env = "devolpoment";
+var envMap = new Map([
+    ["devolpoment", "https://ceshi.com"],
+    ["pre", "https://pre.com"],
+    ["production", "https://production.com"],
+]);
+exports.setting = envMap.get(env);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXRpbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInV0aWwudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFNQSxJQUFNLEdBQUcsR0FBWSxhQUFhLENBQUM7QUFFbkMsSUFBTSxNQUFNLEdBQXdCLElBQUksR0FBRyxDQUFDO0lBQzFDLENBQUMsYUFBYSxFQUFFLG1CQUFtQixDQUFDO0lBQ3BDLENBQUMsS0FBSyxFQUFFLGlCQUFpQixDQUFDO0lBQzFCLENBQUMsWUFBWSxFQUFFLHdCQUF3QixDQUFDO0NBQ3pDLENBQUMsQ0FBRTtBQUlTLFFBQUEsT0FBTyxHQUFXLE1BQU0sQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFFLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBhdXRob3IgIHpoYW5nbGllamllXG4gKiBAdmVyc2lvbiAxLjAuMFxuICovXG50eXBlIEVudnR5cGUgPSBcImRldm9scG9tZW50XCIgfCBcInByZVwiIHwgXCJwcm9kdWN0aW9uXCI7IFxuXG5jb25zdCBlbnY6IEVudnR5cGUgPSBcImRldm9scG9tZW50XCI7IFxuXG5jb25zdCBlbnZNYXA6IE1hcDxzdHJpbmcsIHN0cmluZz4gPSBuZXcgTWFwKFtcbiAgW1wiZGV2b2xwb21lbnRcIiwgXCJodHRwczovL2Nlc2hpLmNvbVwiXSxcbiAgW1wicHJlXCIsIFwiaHR0cHM6Ly9wcmUuY29tXCJdLFxuICBbXCJwcm9kdWN0aW9uXCIsIFwiaHR0cHM6Ly9wcm9kdWN0aW9uLmNvbVwiXSxcbl0pIDtcbi8qKiDnjq/looPlj5jph48gXG4gKiBAcmV0dXJucyB7IHN0cmluZyB9IGFwaSDlkI3np7BcbiovXG5leHBvcnQgY29uc3Qgc2V0dGluZzogc3RyaW5nID0gZW52TWFwLmdldChlbnYpITtcblxuXG5cblxuIl19

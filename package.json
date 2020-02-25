@@ -5,6 +5,7 @@
   "scripts": {
     "compile": "./node_modules/typescript/bin/tsc",
     "tsc": "node ./node_modules/typescript/lib/tsc.js",
+    "start": "npm run tsc && tsc -w ",
     "gulp": "gulp watch && gulp sass",
     "build": "gulp clear && gulp uglify && gulp build"
   },
@@ -14,6 +15,7 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "miniprogram-api-typings": "^2.10.1-1",
+    "nodemon": "^2.0.2",
     "typescript": "^3.3.3333"
   },
   "devDependencies": {

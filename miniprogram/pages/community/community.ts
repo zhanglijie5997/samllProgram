@@ -11,9 +11,9 @@ Page({
   onLoad() {
     console.log(setting, 'setting')
     this.setData({
-      // logs: (wx.getStorageSync('logs') || []).map((log: string) => {
-        
-      // }),
+      logs: (wx.getStorageSync('logs') || []).map((_: string) => {
+        return 123
+      }),
     })
   },
 })

@@ -3,6 +3,8 @@
  * @version 1.0
  */
 // index.ts
+import { wxGetsysteminfo } from '../../utils/base/base'
+import { setting } from '../../utils/util'
 // 获取应用实例
 const app = getApp<IAppOption>()
 
@@ -20,6 +22,7 @@ Page({
     })
   },
   onLoad() {
+    console.log(wxGetsysteminfo, setting, 'a')
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

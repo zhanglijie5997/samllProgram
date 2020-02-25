@@ -1,0 +1,4 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.wxGetsysteminfo = wx.getSystemInfoSync();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYmFzZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImJhc2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDYSxRQUFBLGVBQWUsR0FBRyxFQUFFLENBQUMsaUJBQWlCLEVBQUUsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKiB3eC5nZXRTeXN0ZW1JbmZvIOeahOWQjOatpeeJiOacrCAqL1xyXG5leHBvcnQgY29uc3Qgd3hHZXRzeXN0ZW1pbmZvID0gd3guZ2V0U3lzdGVtSW5mb1N5bmMoKTsiXX0=
