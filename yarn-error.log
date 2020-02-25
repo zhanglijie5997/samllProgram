@@ -1,0 +1,51 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\ilaisa\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\;D:\node_modules;C:\Users\ilaisa\node_modules;C:\Program Files\TortoiseSVN\bin;D:\git\bin;D:\flutter-master\flutter-master\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;E:\flutter\bin;;C:\Program Files\python;C:\Program Files\python\Scripts;;D:\BtSoft\panel\script;;C:\Program Files\python;C:\Program Files\python\Scripts;;D:\BtSoft\panel\script;D:\Scripts\;D:\;C:\Users\ilaisa\AppData\Local\Microsoft\WindowsApps;C:\Users\ilaisa\AppData\Roaming\npm;C:\Program Files\nodejs;D:\git\bin;D:\WebStorm 2019.2\bin;D:\Fiddler;C:\Users\ilaisa\Desktop\Fiddler;C:\Users\ilaisa\flutter\bin;D:\Docker Toolbox;D:\IntelliJ IDEA 2019.2.4\bin;E:\python;C:\Users\ilaisa\AppData\Local\Yarn\bin;C:\Users\ilaisa\AppData\Local\BypassRuntm
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\ilaisa\Desktop\wechat_store\node_modules\.node-sass.DELETE\vendor\win32-x64-64\binding.node'
+
+npm manifest: 
+  {
+    "name": "miniprogram-ts-quickstart",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "compile": "./node_modules/typescript/bin/tsc",
+      "tsc": "node ./node_modules/typescript/lib/tsc.js",
+      "gulp": "gulp watch && gulp sass",
+      "build": "gulp uglify && gulp build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "",
+    "dependencies": {
+      "gulp": "^4.0.2",
+      "miniprogram-api-typings": "^2.10.1-1",
+      "typescript": "^3.3.3333"
+    },
+    "devDependencies": {
+      "gulp-rename": "^2.0.0",
+      "gulp-sass": "^4.0.2",
+      "gulp-uglify": "^3.0.2",
+      "node-sass": "^4.13.1",
+      "readable-stream": "^3.6.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

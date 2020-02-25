@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var env="devolpoment",envMap=new Map([["devolpoment","https://ceshi.com"],["pre","https://pre.com"],["production","https://production.com"]]);exports.setting=envMap.get(env);

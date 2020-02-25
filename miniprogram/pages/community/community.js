@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var util_1=require("../../utils/util");Page({data:{logs:[]},onLoad:function(){this.setData({})}});

@@ -1,0 +1,27 @@
+{
+  "name": "miniprogram-ts-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "compile": "./node_modules/typescript/bin/tsc",
+    "tsc": "node ./node_modules/typescript/lib/tsc.js",
+    "gulp": "gulp watch && gulp sass",
+    "build": "gulp clear && gulp uglify && gulp build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "miniprogram-api-typings": "^2.10.1-1",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "gulp-clean": "^0.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.13.1",
+    "readable-stream": "^3.6.0"
+  }
+}
