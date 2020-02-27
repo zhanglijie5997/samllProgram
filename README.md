@@ -10,3 +10,14 @@ npm run gulp   --- 监听scss变化
 
 ## 打包
 npm run build
+
+
+
+```js
+    1. 每个ts文件需要加编辑者信息
+    @example
+        /**
+         *  @author  zhanglijie
+         *  @version 1.0.0 
+         */
+```

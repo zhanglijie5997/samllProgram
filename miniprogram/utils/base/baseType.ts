@@ -1,3 +1,7 @@
+/**
+ *  @author  zhanglijie
+ *  @version 1.0.0 
+ */
 /** 路由跳转类型 */
 export enum routerEnumPushNameType {
     "switchTab" = "switchTab",

@@ -1,3 +1,7 @@
+/**
+ *  @author  zhanglijie
+ *  @version 1.0.0 
+ */
 import { routerPushNameType, routerEnumPushNameType, toastType, toastEnumType, toastNameType} from './baseType'
 
 /** wx.getSystemInfo 的同步版本 */

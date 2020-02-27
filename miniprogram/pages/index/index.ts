@@ -7,6 +7,7 @@
 // import { setting } from '../../utils/util'
 
 // import base64 from '../../utils/base64/base64'
+import { axios } from "../../utils/axios/axios";
 // 获取应用实例
 const app = getApp<IAppOption>()
 const MD5 = require("../../utils/md5/md5");
@@ -24,7 +25,17 @@ Page({
       url: '../logs/logs',
     })
   },
-  onLoad() {
+  click() {
+    wx.navigateTo({
+      url: '../test/test',
+    })
+  },
+  async onLoad() {
+    const data = await axios("/test", {
+      a: 1
+    });
+    console.log(data, 'data---');
+    console.log(data, '9999');
     console.log(MD5.hex_md5("zxc"),base64,';;;;;')
     if (app.globalData.userInfo) {
       this.setData({

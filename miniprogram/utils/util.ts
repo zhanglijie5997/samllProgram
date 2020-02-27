@@ -7,7 +7,7 @@ type Envtype = "devolpoment" | "pre" | "production";
 const env: Envtype = "devolpoment"; 
 
 const envMap: Map<string, string> = new Map([
-  ["devolpoment", "https://ceshi.com"],
+  ["devolpoment", "http://192.168.0.133:8091"],
   ["pre", "https://pre.com"],
   ["production", "https://production.com"],
 ]) ;
