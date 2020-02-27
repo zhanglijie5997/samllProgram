@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "appBar": "/components/public/appBar/appBar",
+        "index": "/components/public/appBarPage/index/index",
+        "coummunity": "/components/public/appBarPage/community/community",
+        "order": "/components/public/appBarPage/order/order"
+    }
+}

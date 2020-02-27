@@ -1,0 +1,5 @@
+<view class="appBarPae_community">
+    appBarPae_community
+    {{ test }}
+</view>
+  

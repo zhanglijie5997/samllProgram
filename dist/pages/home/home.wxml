@@ -1,0 +1,13 @@
+<view class="home">
+    <view class="viewBox" style="display: {{ isActive === 0 ? 'block': 'none' }}">
+        <index />
+    </view>
+    <view style="display: {{  isActive === 1 ? 'block': 'none' }}">
+        <coummunity />
+    </view>
+    <view style="display: {{  isActive === 3 ? 'block': 'none' }}">
+        <order />
+    </view>
+    <appBar bind:changeTabFn="changeTabFn" select="{{ isActive }}"/>
+</view>
+  

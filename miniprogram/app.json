@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/home/home",
         "pages/index/index",
         "pages/community/community",
         "pages/service/service",
@@ -14,29 +15,6 @@
         "enablePullDownRefresh": true,
         "onReachBottomDistance": 100
     },
-    "tabBar": {
-        "list": [{
-                "pagePath": "pages/index/index",
-                "text": "首页"
-            },
-            {
-                "pagePath": "pages/community/community",
-                "text": "社群"
-            },
-            {
-                "pagePath": "pages/service/service",
-                "text": "维修"
-            },
-            {
-                "pagePath": "pages/user/user",
-                "text": "我的"
-            },
-            {
-                "pagePath": "pages/community/community",
-                "text": "测试"
-            }
-        ]
-    },
     "networkTimeout": {
         "request": 10000,
         "downloadFile": 10000,
@@ -49,7 +27,10 @@
         }
     },
     "navigateToMiniProgramAppIdList": [],
-    "requiredBackgroundModes": ["audio", "location"],
+    "requiredBackgroundModes": [
+        "audio",
+        "location"
+    ],
     "debug": true,
     "style": "v2",
     "sitemapLocation": "sitemap.json"

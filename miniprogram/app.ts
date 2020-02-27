@@ -1,18 +1,21 @@
+import { getStorageSync } from "./utils/base/base";
+
 // app.ts
 App<IAppOption>({
   globalData: {
     userMsg: [],
     // 用户地理信息位置
     local: {
-      accuracy: 0, 
-      altitude: 0, 
-      horizontalAccuracy: 0, 
+      accuracy: 0,
+      altitude: 0,
+      horizontalAccuracy: 0,
       latitude: 0,
       speed: 0,
       longitude: 0,
       verticalAccuracy: 0,
       errMsg: ""
     },
+    isActive: 0
   },
   onLaunch() {
     const self = this;
@@ -26,7 +29,17 @@ App<IAppOption>({
         console.log(res, '定位信息');
         self.globalData.local = res;
       }
-    })
+    });
+    // 本地存储的底部导航索引
+    let tabIndex: number = 0;
+    try {
+      tabIndex = JSON.parse(getStorageSync("tabIndex")!)
+    } catch (error) {
+      tabIndex = 0;
+    };
+    console.log(tabIndex, 'tabIndex')
+    this.globalData.isActive = tabIndex;
+    
     // 登录
     wx.login({
       success: res => {

@@ -1,0 +1,10 @@
+<view class="appBar">
+    <ul>
+        <view class="item" bindtap="selectFn" data-index="{{ index }}" wx:for="{{list}}" wx:key="id" wx:for-index="index" wx:for-item="item">
+            <view class="itemBox" >
+                <image src="{{ isActive === index ? item.selectedIconPath : item.iconPath }}" alt="" class="icon"/>
+                <text style="color: {{ isActive === index ? item.selectedColor:'' }}">{{ item.text }}</text>
+            </view>
+        </view>
+    </ul>
+</view>

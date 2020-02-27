@@ -1,0 +1,1 @@
+.appBar{position:fixed;bottom:0;width:100vw;left:0;box-shadow:0rpx 0rpx 5rpx 5rpx #6666664d}.appBar ul{display:flex}.appBar ul .item{display:flex;justify-content:center;margin-top:17rpx;flex:1;height:100rpx}.appBar ul .item .itemBox{font-size:20rpx}.appBar ul .item .itemBox .icon{display:block;width:40rpx;height:40rpx}

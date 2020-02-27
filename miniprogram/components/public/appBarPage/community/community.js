@@ -1,0 +1,1 @@
+"use strict";Component({properties:{myProperty:{type:String,value:"",observer:function(){}}},data:{test:1},methods:{},created:function(){},attached:function(){},ready:function(){var t=this;setTimeout(function(){t.setData({test:2})},2e3)},moved:function(){},detached:function(){}});

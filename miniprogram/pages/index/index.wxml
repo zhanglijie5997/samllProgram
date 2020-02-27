@@ -12,7 +12,7 @@
     </view>
     <item bindtap="click"></item>
 
-
+    <appBar select="0" />
     <!-- <web-view src="http://m.ilaisa.com/#/blogDetail/10223"/> -->
     <!-- <webview webview="https://m.ilaisa.com/#/blogDetail/10223"></webview> -->
 </view>

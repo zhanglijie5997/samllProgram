@@ -1,0 +1,26 @@
+.appBar {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+    box-shadow: 0rpx 0rpx 5rpx 5rpx #6666664d;
+    ul {
+        display: flex;
+        .item {
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            margin-top: 17rpx;
+            flex: 1;
+            height: 100rpx;
+            .itemBox {
+                font-size: 20rpx;
+                .icon {
+                    display: block;
+                    width: 40rpx;
+                    height: 40rpx;
+                }
+            }
+        }
+    }
+}
