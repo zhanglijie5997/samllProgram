@@ -1,14 +1,32 @@
 // app.ts
 App<IAppOption>({
   globalData: {
-    userMsg: []
+    userMsg: [],
+    // 用户地理信息位置
+    local: {
+      accuracy: 0, 
+      altitude: 0, 
+      horizontalAccuracy: 0, 
+      latitude: 0,
+      speed: 0,
+      longitude: 0,
+      verticalAccuracy: 0,
+      errMsg: ""
+    },
   },
   onLaunch() {
+    const self = this;
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    wx.getLocation({
+      type: "wgs84",
+      success(res) {
+        console.log(res, '定位信息');
+        self.globalData.local = res;
+      }
+    })
     // 登录
     wx.login({
       success: res => {

@@ -28,7 +28,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.10.2",
 	"appid": "wxbdcd6e9f5b3ed7c1",
-	"projectname": "dist",
+	"projectname": "miniprogram",
 	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
 		"hidedInDevtools": []

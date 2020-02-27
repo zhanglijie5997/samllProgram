@@ -20,11 +20,11 @@
     "strictPropertyInitialization": true,
     "lib": ["es2015"],
     "typeRoots": [
-      "./typings"
+      "./typings",
     ]
   },
   "include": [
-    "./**/*.ts"
+    "./**/*.ts", 
   ],
   "exclude": [
     "node_modules"

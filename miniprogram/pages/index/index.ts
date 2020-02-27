@@ -3,11 +3,14 @@
  * @version 1.0
  */
 // index.ts
-import { wxGetsysteminfo } from '../../utils/base/base'
-import { setting } from '../../utils/util'
+// import { wxGetsysteminfo } from '../../utils/base/base'
+// import { setting } from '../../utils/util'
+
+// import base64 from '../../utils/base64/base64'
 // 获取应用实例
 const app = getApp<IAppOption>()
-
+const MD5 = require("../../utils/md5/md5");
+const base64 = require("../../utils/base64/base64").Base64;
 Page({
   data: {
     motto: 'Hello World',
@@ -22,7 +25,7 @@ Page({
     })
   },
   onLoad() {
-    console.log(wxGetsysteminfo, setting, 'setting')
+    console.log(MD5.hex_md5("zxc"),base64,';;;;;')
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

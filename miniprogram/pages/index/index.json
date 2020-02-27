@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "item": "/components/index/item/item"
+    "item": "/components/index/item/item",
+    "webview": "/components/public/webview/webview"
   }
 }

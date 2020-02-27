@@ -11,4 +11,6 @@
     <text class="user-motto">{{motto}}</text>
   </view>
   <item ></item>
+  <!-- <web-view src="http://m.ilaisa.com/#/blogDetail/10223"/> -->
+  <!-- <webview webview="https://m.ilaisa.com/#/blogDetail/10223"></webview> -->
 </view>
