@@ -14,6 +14,7 @@ Page({
     //options(Object)
     onLoad: function(){
         const { isActive } = app.globalData;
+        console.log(isActive, '???isActive')
         this.setData({
             isActive
         })

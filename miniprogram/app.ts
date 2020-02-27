@@ -1,4 +1,4 @@
-import { getStorageSync } from "./utils/base/base";
+import { getStorageSync, setStorageSync } from "./utils/base/base";
 
 // app.ts
 App<IAppOption>({
@@ -33,7 +33,7 @@ App<IAppOption>({
     // 本地存储的底部导航索引
     let tabIndex: number = 0;
     try {
-      tabIndex = JSON.parse(getStorageSync("tabIndex")!)
+      tabIndex = JSON.parse(getStorageSync("tabIndex")!) ? JSON.parse(getStorageSync("tabIndex")!) : 0;
     } catch (error) {
       tabIndex = 0;
     };
