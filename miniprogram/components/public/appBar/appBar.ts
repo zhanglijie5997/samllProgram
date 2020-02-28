@@ -70,14 +70,10 @@ Component({
             // 1 => 社群
             // 3 => 维修
             // 4 => 订单 
+            this.triggerEvent("changeTabFn", {
+                index: index
+            });
             switch (index) {
-                case 0:
-                case 1:
-                case 3:
-                    this.triggerEvent("changeTabFn", {
-                        index: index
-                    });
-                    break;
                 case 2:
                     break;
                 default:
