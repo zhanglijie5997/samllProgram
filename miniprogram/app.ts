@@ -1,4 +1,4 @@
-import { getStorageSync, setStorageSync } from "./utils/base/base";
+import { getStorageSync } from "./utils/base/base";
 
 // app.ts
 App<IAppOption>({
@@ -56,7 +56,6 @@ App<IAppOption>({
             success: res => {
               // 可以将 res 发送给后台解码出 unionId
               this.globalData.userInfo = res.userInfo
-
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
               if (this.userInfoReadyCallback) {

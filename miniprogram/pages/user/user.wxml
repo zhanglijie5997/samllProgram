@@ -1,5 +1,0 @@
-
-<!--user.wxml-->
-<view class="container log-list">
-    <text class="log-item">{{ index }}</text>
-</view>
